@@ -1,47 +1,41 @@
 #include <iostream>
 using namespace std;
 
-class log
+
+class CariTigaSegi
+
 {
+	
+	private:
+		int x,y;
+		
 	public:
-		const int LogLeverError = 0;
-		const int LogLevelWarning = 1;
-		const int LogLevelInfo = 2;
 		
-		private;
 		
-		int m_LogLevel=LogLevelInfo;
+		void set_value(int, int );
 		
-		public:
-			void SetLevel (intlevel)
-			{
-				m_LogLevel = level;
-			}
+		int area()
+		{
+			return (x*y)/2;
 			
-			void error( const char message)
-			{
-				if(m_LogLevel>=loglevelError)
-					cout<<"[ERROR]:"<<message<<end1;
-			}
-		   void Warn( const char message)
-		   {
-		   	if(m_LogLevel>=LogLevelWarning)
-		   	cout<<"[WARNING]:"<<message<<end1;
-		   }
-		   void Info( const char message)
-		   {
-		   if(m_LogLevel>=Log LevelInfo)
-			cout<<"[INFO]:"<<message<<end1;
 		}
-		
-		};
-		
-		int main()
+	
+};
+
+ void CariTigaSegi::set_value(int a ,int b)
 {
+	x = a;
+	y = b;
 	
-	Log olog;
-	oLog.SetLevel(LogLevelWarning);
-	oLog.Warn("Hello!!!");
 	
-	std::cin.get();
+}
+
+int main()
+
+{
+	CariTigaSegi hahaha;
+	hahaha.set_value(10,9);
+	hahaha.area();
+	cout<<hahaha.area();
+	
 }
