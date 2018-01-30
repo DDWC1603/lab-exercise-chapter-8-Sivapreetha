@@ -38,4 +38,5 @@ int main()
 	hahaha.area();
 	cout<<hahaha.area();
 	
+	
 }
